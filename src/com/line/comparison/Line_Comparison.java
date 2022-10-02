@@ -29,10 +29,25 @@ public class Line_Comparison {
 	        Double lenOfLineSecond = Math.sqrt(Math.pow((x4 - x3), 2) + Math.pow((y4 - y3), 2));
 	        System.out.println("Length of second line is " + lenOfLineSecond);
 
-	        if (lenOfLineFirst.equals(lenOfLineSecond))
+	        if (lenOfLineFirst.equals(lenOfLineSecond)) 
+	        {
 	            System.out.println("Lines are equal");
-	        else
+	        }
+	        else 
+	        {
 	            System.out.println("Lines are not equal");
+	      
+	        }
+	        
+	        
+	        int value = lenOfLineFirst.compareTo(lenOfLineSecond);
+	        if (value < 0) {
+	            System.out.println("Length of first line is less than second line");
+	        } else if (value > 0) {
+	            System.out.println("Length of second line is greater than first line");
+	        } else {
+	            System.out.println("Both lines are equal");
+	    }
 	    }
 	
 	public static void main(String[] args) {
